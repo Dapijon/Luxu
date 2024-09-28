@@ -1,5 +1,5 @@
-// components/ContactUs.js
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import './ContactUs.css';
 
 const ContactUs = () => {
@@ -19,8 +19,14 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic (e.g., send form data to a server or API)
-    console.log('Form Submitted', formData);
+    emailjs.send('service_lgzfdu9', 'template_owh36ik', formData, 'k_pUDZIw7pglF9XGf')
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        alert('Message sent successfully!');
+      }, (error) => {
+        console.error('FAILED...', error);
+        alert('Failed to send message. Please try again later.');
+      });
     setFormData({ name: '', email: '', message: '' }); // Reset form
   };
 
