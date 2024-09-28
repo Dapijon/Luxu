@@ -7,37 +7,44 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './Product.css';
 
+// Import images if they are located in src
+import sugarImage from '../assets/images/sugar.jpg';
+import cookingOilImage from '../assets/images/cooking oil.jpeg';
+import beddingsImage from '../assets/images/bedding.jpeg';
+import computersImage from '../assets/images/computers.webp';
+import coffeeImage from '../assets/images/essentials.jpeg';
+
 const Products = () => {
   const products = [
     {
       id: 1,
       title: 'Premium sugar',
       description: 'High-quality Australian sugar, carefully processed and packed for export.',
-      image: '/assets/images/sugar.jpg',
+      image: sugarImage,
     },
     {
       id: 2,
       title: 'Quality cooking oil',
       description: 'Premium cooking oil, ensuring health and taste in every drop.',
-      image: '/images/cooking-oil.jpg',
+      image: cookingOilImage,
     },
     {
       id: 3,
       title: 'Comfortable beddings',
       description: 'Comfortable and durable beddings that meet global standards.',
-      image: '/images/beddings.jpg',
+      image: beddingsImage,
     },
     {
       id: 4,
       title: 'Computers',
       description: 'Get the latest high-performance computers for your needs.',
-      image: '/images/computers.webp',
+      image: computersImage,
     },
     {
       id: 5,
       title: 'Essential Goods',
       description: 'A wide range of daily essentials that cater to various needs.',
-      image: '/images/coffee.jpg',
+      image: coffeeImage,
     },
   ];
 

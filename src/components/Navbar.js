@@ -9,9 +9,9 @@ const Navbar = () => {
         <img src="iconlogo.ico" alt="LuxuTrade Logo" />
       </div>
       <ul className="navbar-links">
-        <li><a href="#home">Hero</a></li>
+        <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#products">Product</a></li>
+        <li><a href="#product">Product</a></li>
       </ul>
       <button className="contact-btn">Contact</button>
     </nav>
