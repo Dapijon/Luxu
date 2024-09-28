@@ -1,5 +1,7 @@
 // components/Footer.js
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './Footer.css';
 
 const Footer = () => {
@@ -18,13 +20,13 @@ const Footer = () => {
             <h4>Follow Us</h4>
             <div className="social-links">
               <a href="https://facebook.com" target="_blank" rel="noreferrer">
-                <img src="./images/facebook-sketched-logo-variant.png" alt="Facebook" />
+                <FontAwesomeIcon icon={faFacebook} size="2x" />
               </a>
               <a href="https://twitter.com" target="_blank" rel="noreferrer">
-                <img src="/twitter-icon.png" alt="Twitter" />
+                <FontAwesomeIcon icon={faTwitter} size="2x" />
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-                <img src="/linkedin-icon.png" alt="LinkedIn" />
+                <FontAwesomeIcon icon={faLinkedin} size="2x" />
               </a>
             </div>
           </div>
