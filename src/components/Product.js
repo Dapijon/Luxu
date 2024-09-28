@@ -49,7 +49,7 @@ const Products = () => {
   ];
 
   return (
-    <section className="products-section">
+    <section id='product' className="products-section">
       <h2 className="products-title">Our Products</h2>
       <Swiper
         modules={[Navigation, Pagination]}

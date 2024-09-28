@@ -31,10 +31,21 @@
   font-size: 1rem;
   text-decoration: none;
   font-weight: bold;
+  border: none;
+  border-radius: 30px; /* Rounded corners */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
 
 .hero-btn:hover {
   background-color: #007f29;
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.hero-btn:active {
+  transform: translateY(0); /* Reset when clicked */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Slightly reduced shadow on click */
 }
 
 .hero::before {

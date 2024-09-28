@@ -11,9 +11,11 @@ const Navbar = () => {
       <ul className="navbar-links">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#product">Product</a></li>
+        <li><a href="#product">Products</a></li>
       </ul>
-      <button className="contact-btn">Contact</button>
+      <button className="contact-btn">
+        <a href="#contact">Contact</a>
+      </button>
     </nav>
   );
 };
