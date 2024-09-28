@@ -12,6 +12,7 @@
 .hero-content {
   text-align: center;
   z-index: 2;
+  padding: 0 20px; /* Add padding for smaller screens */
 }
 
 .hero h1 {
@@ -57,4 +58,19 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Dark overlay */
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .hero-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
 }

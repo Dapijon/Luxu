@@ -1,15 +1,17 @@
 /* About.css */
 .about-section {
   display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
   justify-content: space-between;
   align-items: center;
-  padding: 60px 100px;
+  padding: 5vw 10vw;
   background-color: #fff;
 }
 
 .about-content {
   flex: 1;
   max-width: 600px;
+  margin-bottom: 20px; /* Add margin for spacing on smaller screens */
 }
 
 .about-title {
@@ -54,4 +56,15 @@
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 10vw 5vw;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .about-heading {
+    font-size: 2rem;
+  }
 }

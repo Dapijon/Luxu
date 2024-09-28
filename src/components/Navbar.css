@@ -10,16 +10,12 @@
 }
 
 .navbar-logo img {
-  height: 140px; 
+  height: 80px;
   transition: transform 0.3s ease; 
 }
 
 .navbar-logo img:hover {
-  transform: scale(2.41); 
-}
-
-.navbar-logo img {
-  height: 80px;
+  transform: scale(1.1); 
 }
 
 .navbar-links {
@@ -81,4 +77,20 @@
   transform: translateY(0); 
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
   color: white; 
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-logo img {
+    height: 60px;
+  }
 }
