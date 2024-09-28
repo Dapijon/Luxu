@@ -1,0 +1,76 @@
+/* Footer.css */
+.footer {
+  background-color: #101820;  /* Dark background to contrast with the rest of the page */
+  color: #fff;                /* White text for readability */
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer-logo-img {
+  height: 80px;               /* Example height for the logo */
+}
+
+.footer-contact h4, .footer-socials h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #00b341;             /* Primary green color */
+}
+
+.footer-contact a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a img {
+  height: 30px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #fff;
+  padding-top: 10px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo-img {
+    height: 60px;
+  }
+
+  .social-links a img {
+    height: 25px;
+  }
+}

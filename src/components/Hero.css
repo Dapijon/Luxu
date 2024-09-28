@@ -1,0 +1,49 @@
+/* Hero.css */
+.hero {
+  background: url('../assets/images/AdobeStock_82789319.jpeg') center center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+.hero-btn {
+  background-color: #00b341;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-btn:hover {
+  background-color: #007f29;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}

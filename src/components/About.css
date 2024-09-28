@@ -1,0 +1,57 @@
+/* About.css */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 100px;
+  background-color: #fff;
+}
+
+.about-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.about-title {
+  color: #00b341;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.about-description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.about-link {
+  color: #00b341;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid #00b341;
+}
+
+.about-link:hover {
+  color: #007f29;
+  border-color: #007f29;
+}
+
+.about-image {
+  flex: 1;
+  text-align: right;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
