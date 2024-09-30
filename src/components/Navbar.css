@@ -1,69 +1,110 @@
-/* Navbar.css */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background: linear-gradient(135deg, #162115, #1a3e31); 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-  transition: background 0.3s ease; 
+  background: #333; /* Dark background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
 }
 
 .navbar-logo img {
-  height: 130px;
-  transition: transform 0.3s ease; 
+  height: 50px;
+  transition: transform 0.3s ease;
 }
 
-.navbar-logo img:hover {
-  transform: scale(1.1); 
+.navbar-title {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 15px;
 }
 
+.navbar-toggle {
+  display: none; /* Hidden by default, shown in mobile */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar-toggle span {
+  background: white;
+  height: 3px;
+  width: 25px;
+  margin: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Regular (Desktop) Navigation */
 .navbar-links {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 50px;
 }
 
 .navbar-links li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  position: relative; 
-  transition: color 0.3s ease; 
+  position: relative;
+  transition: color 0.3s ease;
 }
 
 .navbar-links li a:hover {
-  color: #00b341; 
+  color: #00b341;
 }
 
-.navbar-links li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -5px; 
-  height: 2px; 
-  background-color: #00b341; 
-  transform: scaleX(0); 
-  transition: transform 0.3s ease;
-}
-
-.navbar-links li a:hover::after {
-  transform: scaleX(1); 
-}
-
+/* Side Panel Styling for Mobile */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+  .navbar-toggle {
+    display: flex;
   }
 
-  .navbar-links {
+  .side-panel {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Hidden by default */
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    display: flex;
     flex-direction: column;
-    gap: 10px;
+    padding-top: 20px;
+    align-items: center;
+    transition: right 0.3s ease; /* Smooth slide effect */
+    z-index: 999;
   }
 
-  .navbar-logo img {
-    height: 60px;
+  .side-panel.active {
+    right: 0; /* When the panel is active, bring it into view */
+  }
+
+  .side-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .side-panel ul li {
+    padding: 15px 0;
+  }
+
+  .side-panel ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+  }
+
+  .side-panel ul li a:hover {
+    background-color: #444;
+    color: #00b341;
   }
 }
