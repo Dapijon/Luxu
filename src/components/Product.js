@@ -18,7 +18,7 @@ const Products = () => {
     { id: 2, title: 'Quality cooking oil', description: 'Premium cooking oil, ensuring health and taste in every drop.', image: cookingOilImage },
     { id: 3, title: 'Comfortable beddings', description: 'Comfortable and durable beddings that meet global standards.', image: beddingsImage },
     { id: 4, title: 'Computers', description: 'The latest technology solutions, ready to enhance your productivity.', image: computersImage },
-    { id: 5, title: 'A wide range of daily essentials that cater to various needs.', description: 'A wide range of essentials.', image: essentialsImage },
+    { id: 5, title: 'Essentials', description: 'A wide range of daily essentials that cater to various needs.', image: essentialsImage },
   ];
 
   return (
