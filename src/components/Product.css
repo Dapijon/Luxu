@@ -56,6 +56,14 @@
   background-color: #00b341;
 }
 
+.custom-swiper .swiper-pagination {
+  position: absolute;
+  bottom: -4px; 
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .swiper-slide {
     width: 100% !important; 

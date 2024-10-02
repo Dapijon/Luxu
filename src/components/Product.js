@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import './Product.css';
 
-// Importing of  images
+// Importing of images
 import sugarImage from '../assets/images/sugar.jpg';
 import cookingOilImage from '../assets/images/cooking oil.jpeg';
 import beddingsImage from '../assets/images/bedding.jpeg';
@@ -25,11 +25,12 @@ const Products = () => {
     <section id='product' className="products-section">
       <h2 className="products-title">Our Products</h2>
       <Swiper
+        className="custom-swiper"  
         modules={[Pagination, Autoplay]}  
         spaceBetween={0}  
         slidesPerView={1}  
         autoplay={{
-          delay: 2500,  
+          delay: 3000,  
           disableOnInteraction: false,  
           pauseOnMouseEnter: true,  
         }}
