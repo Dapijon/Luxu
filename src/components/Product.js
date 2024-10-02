@@ -1,4 +1,3 @@
-// components/Products.js
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
@@ -6,12 +5,12 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import './Product.css';
 
-// Import images
+// Importing of  images
 import sugarImage from '../assets/images/sugar.jpg';
 import cookingOilImage from '../assets/images/cooking oil.jpeg';
 import beddingsImage from '../assets/images/bedding.jpeg';
 import computersImage from '../assets/images/computers.webp';
-import coffeeImage from '../assets/images/essentials.jpeg';
+import essentialsImage from '../assets/images/essentials.jpeg';
 
 const Products = () => {
   const products = [
@@ -19,31 +18,31 @@ const Products = () => {
     { id: 2, title: 'Quality cooking oil', description: 'Premium cooking oil.', image: cookingOilImage },
     { id: 3, title: 'Comfortable beddings', description: 'Durable beddings.', image: beddingsImage },
     { id: 4, title: 'Computers', description: 'Latest high-performance computers.', image: computersImage },
-    { id: 5, title: 'Essential Goods', description: 'A wide range of essentials.', image: coffeeImage },
+    { id: 5, title: 'Essential Goods', description: 'A wide range of essentials.', image: essentialsImage },
   ];
 
   return (
     <section id='product' className="products-section">
       <h2 className="products-title">Our Products</h2>
       <Swiper
-        modules={[Pagination, Autoplay]}  // Use Pagination and Autoplay
-        spaceBetween={0}  // No spacing between slides
-        slidesPerView={1}  // Show 1 slide at a time initially
+        modules={[Pagination, Autoplay]}  
+        spaceBetween={0}  
+        slidesPerView={1}  
         autoplay={{
-          delay: 2500,  // 2.5 second delay
-          disableOnInteraction: false,  // Don't stop autoplay on user interaction
-          pauseOnMouseEnter: true,  // Pauses when user hovers over
+          delay: 2500,  
+          disableOnInteraction: false,  
+          pauseOnMouseEnter: true,  
         }}
-        loop={true}  // Loop the slider infinitely
-        pagination={{ clickable: true }}  // Clickable pagination dots
+        loop={true}  
+        pagination={{ clickable: true }} 
         breakpoints={{
           768: {
-            slidesPerView: 2,  // Show 2 slides for medium screens
-            spaceBetween: 20,  // Add space between slides for medium screens
+            slidesPerView: 2,  
+            spaceBetween: 20,  
           },
           1024: {
-            slidesPerView: 3,  // Show 3 slides for larger screens
-            spaceBetween: 30,  // Standard spacing for larger screens
+            slidesPerView: 3,  
+            spaceBetween: 30, 
           },
         }}
       >

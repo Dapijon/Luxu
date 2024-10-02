@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background: #333; /* Dark background */
+  background: #333; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: background 0.3s ease;
 }
@@ -26,7 +26,7 @@
 }
 
 .navbar-toggle {
-  display: none; /* Hidden by default, shown in mobile */
+  display: none; 
   flex-direction: column;
   cursor: pointer;
 }
@@ -39,7 +39,7 @@
   transition: all 0.3s ease;
 }
 
-/* Regular (Desktop) Navigation */
+
 .navbar-links {
   display: flex;
   list-style: none;
@@ -58,7 +58,6 @@
   color: #00b341;
 }
 
-/* Side Panel Styling for Mobile */
 @media (max-width: 768px) {
   .navbar-toggle {
     display: flex;
@@ -67,7 +66,7 @@
   .side-panel {
     position: fixed;
     top: 0;
-    right: -250px; /* Hidden by default */
+    right: -250px; 
     height: 100%;
     width: 250px;
     background-color: #333;
@@ -75,12 +74,12 @@
     flex-direction: column;
     padding-top: 20px;
     align-items: center;
-    transition: right 0.3s ease; /* Smooth slide effect */
+    transition: right 0.3s ease;
     z-index: 999;
   }
 
   .side-panel.active {
-    right: 0; /* When the panel is active, bring it into view */
+    right: 0; 
   }
 
   .side-panel ul {
