@@ -1,7 +1,6 @@
-/* About.css */
 .about-section {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  flex-wrap: wrap; 
   justify-content: space-between;
   align-items: center;
   padding: 5vw 10vw;
@@ -11,7 +10,7 @@
 .about-content {
   flex: 1;
   max-width: 600px;
-  margin-bottom: 20px; /* Add margin for spacing on smaller screens */
+  margin-bottom: 20px; 
 }
 
 .about-title {
@@ -61,7 +60,7 @@
 @media (max-width: 768px) {
   .about-section {
     padding: 10vw 5vw;
-    flex-direction: column; /* Stack items vertically on smaller screens */
+    flex-direction: column; 
   }
 
   .about-heading {
